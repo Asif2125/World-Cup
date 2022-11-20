@@ -1,58 +1,138 @@
 /* google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto+Condensed&display=swap');
 
+
 body {
-    width: auto;
-    font-family: 'Poppins', sans-serif;
+    max-width: 90%;
+    margin: auto;
+    box-sizing: border-box;
 }
 
-.greatest-Show {
-    height: 600px;
-    background-color: #161616;
-    border-radius: 30px;
-    margin: 50px 90px;
+/* stylses */
+.container {
+    margin-top: 30px;
+    width: 100%;
+}
 
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 30px;
+}
+
+.headText {
+    color: white;
+}
+
+.btn {
+    height: 50px;
+    width: 100px;
+    background-color: rgb(60, 63, 61);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.btn:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-Info {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.show-info {
-    width: 531px;
-    height: 500px;
-    border: 3px solid salmon;
-    margin-left: 70px;
-}
-
-.show-info h1,
-p {
-    color: white;
 
 }
 
-.show-info h1 {
-    font-size: 50px;
+.title {
+    padding: 111px 24px 111px 106px;
 }
 
-.liveButton {
-    background-color: #DD0000;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    height: 56px;
-    width: 187px;
-    border-radius: 5px;
+.title h1 {
+    font-size: 60px;
 }
 
-.player {
-    padding-right: 50px;
-    padding-top: 40px;
+.title p {
+    font-size: 16px;
 }
 
-.player img {
-    width: 500px;
+.title,
+.head-Thumbnail {
+    width: 50%;
+    /* border: 3px solid skyblue; */
+
+}
+
+.head-Thumbnail>img {
+    width: 90%;
     height: 560px;
-    margin-top: 34px;
-    margin: 0 15px;
-    border: 3px solid red;
+    margin-top: 33px;
+}
+
+
+/* Responsive for Mobile  */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .header-Info {
+        flex-direction: column;
+        border: 3px solid yellow;
+
+    }
+
+    .title {
+        border: 2px solid red;
+        width: 80%;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .title>h1 {
+        font-size: 5px;
+    }
+
+    .btn {
+        color: white;
+        font-size: 15px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .head-Thumbnail {
+        border: 3px solid rebeccapurple;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .title p {
+        font-size: 10px;
+    }
+
+    .head-Thumbnail>img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 33px;
+    }
+
+}
+
+
+
+/* Responsive for Tab  */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 701px) and (max-width: 991px) {
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .title p {
+        font-size: 13px;
+    }
 }
