@@ -5,7 +5,6 @@
 body {
     max-width: 90%;
     margin: auto;
-    box-sizing: border-box;
 }
 
 /* stylses */
@@ -75,6 +74,95 @@ a {
     margin-top: 33px;
 }
 
+/* design for body  */
+.live-Part {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.menu {
+    background-color: black;
+    width: 300px;
+    height: 270px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+}
+
+.sub-info {
+    width: 252px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 5px;
+    background-color: white;
+}
+
+#highlight-info {
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.live-game {
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+    width: 250px;
+    height: 362px;
+}
+
+.game-thumbnail img {
+    /* width: 246px; */
+    width: 100%;
+    height: 175px;
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    color: #161616B2;
+}
+
+.transfer {
+    border: 1px solid #161616;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.Transfer-Live {
+    font-weight: 600;
+}
+
+a {
+    color: black;
+}
+
+
+
+
+
+
 
 /* Responsive for Mobile  */
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -127,7 +215,8 @@ a {
 
 /* Responsive for Tab  */
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 701px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
     .title h1 {
         font-size: 30px;
     }
@@ -135,4 +224,99 @@ a {
     .title p {
         font-size: 13px;
     }
+
+    /* ************************* */
+    /* for body responsive  */
+    /* ************************************** */
+
+    .live-Part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .game {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .menu {
+        background: none;
+        width: 100%;
+        height: 80px;
+        border-radius: 10px;
+
+        position: relative;
+        top: 0;
+    }
+
+    .sub-menu {
+        display: flex;
+        /* border: 3px solid blue; */
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .sub-info {
+        width: 202px;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px 0px;
+        background-color: white;
+    }
+
+    /* liva game responsive */
+    .live-game {
+        box-shadow: 2px 2px 2px black;
+        border-radius: 10px;
+        width: 367px;
+        height: 414.21px;
+
+    }
+
+
+
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+
+    .menu {
+        width: 200px;
+        height: 200px;
+    }
+
+    .sub-info {
+        width: 150px;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+        padding: 5px 2px;
+        background-color: white;
+    }
+
+    .live-game {
+        box-shadow: 2px 2px 4px black;
+        border-radius: 10px;
+        width: 210px;
+        height: 362px;
+    }
+
+    .game-info {
+        padding: 10px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* body {
+        background-color: yellowgreen;
+    } */
+
+
 }
