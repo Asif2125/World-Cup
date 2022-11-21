@@ -209,6 +209,65 @@ a {
         margin-top: 33px;
     }
 
+    /* ************************* */
+    /* for body responsive  */
+    /* ************************************** */
+    .live-Part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .game {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .menu {
+        background: none;
+        width: 100%;
+        height: auto;
+        border: 1px solid red;
+        border-radius: 10px;
+
+
+
+        position: relative;
+        top: 0;
+    }
+
+    .sub-menu {
+
+        width: 50%;
+        border: 2px solid yellow;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .sub-info {
+        width: 100%;
+        height: auto;
+        border: none;
+        box-shadow: 3px 3px black;
+        border-radius: 10px;
+        text-align: center;
+        padding: 0px 5px;
+        /* background-color: white; */
+    }
+
+    #highlight-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* game responsive  */
+    .live-game {
+        box-shadow: 2px 2px 4px black;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
 }
 
 
