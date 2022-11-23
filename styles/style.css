@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto+Condensed&display=swap');
 
 
-body {
+main,
+header {
     max-width: 90%;
     margin: auto;
 }
@@ -27,14 +28,14 @@ body {
 .btn {
     height: 50px;
     width: 100px;
-    background-color: rgb(60, 63, 61);
+    background-color: rgb(204, 6, 6);
     cursor: pointer;
     border-radius: 5px;
 
 }
 
 .btn:hover {
-    background-color: #f44336;
+    background-color: #0db215;
     color: white;
 }
 
@@ -158,6 +159,35 @@ a {
     color: black;
 }
 
+/* footer styles  */
+
+footer {
+    width: 100%;
+    height: 333px;
+    background-color: #161616;
+}
+
+.footer_goal {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 130px;
+}
+
+hr {
+    width: 920px;
+    border: 1px solid #FFFFFF1A;
+}
+
+.contact-Us {
+    text-align: center;
+    color: whitesmoke;
+}
+
+p>span {
+    margin-right: 20px;
+
+}
 
 
 
@@ -169,12 +199,11 @@ a {
 @media only screen and (max-width: 600px) {
     .header-Info {
         flex-direction: column;
-        border: 3px solid yellow;
 
     }
 
     .title {
-        border: 2px solid red;
+
         width: 80%;
         padding: 5%;
         text-align: center;
@@ -191,9 +220,7 @@ a {
         height: auto;
     }
 
-    .head-Thumbnail {
-        border: 3px solid rebeccapurple;
-    }
+
 
     .title h1 {
         font-size: 20px;
@@ -228,7 +255,6 @@ a {
         background: none;
         width: 100%;
         height: auto;
-        border: 1px solid red;
         border-radius: 10px;
 
 
@@ -240,7 +266,6 @@ a {
     .sub-menu {
 
         width: 50%;
-        border: 2px solid yellow;
         height: auto;
         justify-content: space-between;
     }
@@ -268,9 +293,21 @@ a {
         width: 100%;
         height: auto;
     }
+
+    /* footer responsive  */
+    footer {
+        width: 100%;
+        margin-top: 5px;
+        border-radius: 10px;
+        overflow-y: auto;
+    }
+
 }
 
-
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* till not worded  */
+}
 
 /* Responsive for Tab  */
 /* Medium devices (landscape tablets, 768px and up) */
@@ -333,6 +370,14 @@ a {
         width: 367px;
         height: 414.21px;
 
+    }
+
+    /* footer responsive  */
+    footer {
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+        margin-top: 20px;
     }
 
 
